@@ -62,7 +62,7 @@ h2 {
 }
 
 section {
-  margin: 50px 0% 50px 10%
+  margin: auto 10%
 }
 
 @media (max-width: 600px) {
