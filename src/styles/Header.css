@@ -6,9 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header ul {
+  }
+ 
+  .header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,42 +16,119 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.header ul li a {
+  }
+ 
+  .header ul li a {
     color: white;
     text-decoration-line: none;
     font-family: 'Rajdhani';
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.header .active {
-   /*gras et souligné sur la page active*/
+  }
+ 
+  @media (max-width: 500px) {
+   .header ul li a {
+     font-size: 25px;
+   }
+   .header ul li {
+     margin: 0;
+   }
+  }
+ 
+  .header .active {
+    /*gras et souligné sur la page active*/
     text-decoration-line: underline;
     text-shadow: 2px 0 0;
-}
-
-.header ul li a:hover {
+  }
+ 
+  .header ul li a:hover {
     padding: 0;
     text-decoration-line: underline;
-}
-
-.header ul li {
+  }
+ 
+  .header ul li {
     margin: 5px 20px;
-}
-
-.navBarBtn {
-   width: 120px;
-   height: 30px;
-   padding: 0 ;
-   opacity: 0.8
-}
-.header__divLogo {
-   width: 125px;
-}
-
-.header__divLogo img {
-   width: 100%
-}
+  }
+ 
+  .navBarBtn {
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+    opacity: 0.8
+  }
+ 
+  .header__divLogo {
+    width: 125px;
+    z-index: 100000;
+  }
+ 
+  @media (max-width: 800px) {
+    .header__divLogo {
+      width: 75px;
+    }
+  }
+ 
+  .header__divLogo img {
+    width: 100%;
+    z-index: 100000;
+  }
+ 
+  /*Burger menu*/
+  .burger-menu {
+    position: relative;
+    width: fit-content
+  }
+ 
+  .burger-button {
+    display: none;
+    padding: 20px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+ 
+  .burger-button:hover {
+    color: #1a4292;
+    background: none;
+  }
+ 
+  .burger-button.close-visible,
+  .burger-button.open-visible {
+    display: block;
+  }
+ 
+  .burgerMenuList {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: transparent;
+    z-index: 1;
+  }
+ 
+  .menu-list li {
+    padding: 10px;
+  }
+ 
+  .burgerMenuList.isDropDown {
+    display: block;
+    opacity: 1; 
+  }
+ 
+  .burger-menu .hideDropDown {
+    display: none;
+  }
+ 
+  .burger-menu .menu-list.inlineMenuList {
+    display: flex;
+    opacity: 1;
+  }
