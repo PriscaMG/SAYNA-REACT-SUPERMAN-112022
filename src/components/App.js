@@ -7,12 +7,12 @@ import Eshop from "../pages/Eshop.js";
 /*import ProductDetail from '../pages/ProductDetail';*/
 /*import MonCompte from "../pages/MonCompte.js";*/
 import NotFound from "../pages/NotFound";
-/*import Signup from "../pages/Signup";
-import Login from "../pages/Login";
-import Cart from "../pages/Cart";
+import Signup from "../pages/SignUp.js";
+import Login from "../pages/Login.js";
+/*import Cart from "../pages/Cart";*/
 import { AuthContextProvider } from "../context/AuthContext";
-import ProtectedRoutes from "./ProtectedRoutes";
-import { ForgotPassword } from "../pages/ForgotPassword";
+/*import ProtectedRoutes from "./ProtectedRoutes";
+/*import { ForgotPassword } from "../pages/ForgotPassword";
 import OrderRecap from "../pages/OrderRecap";
 import DeliveryPayment from "../pages/DeliveryPayment";
 import OrderConfirmed from "../pages/OrderConfirmed";*/
@@ -20,7 +20,7 @@ import OrderConfirmed from "../pages/OrderConfirmed";*/
 function App() {
   return (
     <BrowserRouter>
-       {/*<AuthContextProvider>*/}
+       <AuthContextProvider>
            <Routes>
              <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
@@ -29,18 +29,18 @@ function App() {
                 <Route path="eshop/cart/orderRecap" element={<OrderRecap />} />
                 <Route path="eshop/cart/orderRecap/deliveryPayment" element={<DeliveryPayment />} />
                 <Route path="eshop/cart/orderRecap/deliveryPayment/orderConfirmed" element={<OrderConfirmed />} />
-                <Route path="eshop/productDetail" element={<ProductDetail />} />
-                <Route path="compte" element={
-                   <ProtectedRoutes route="login">
+                <Route path="eshop/productDetail" element={<ProductDetail />} />*/}
+                {/*<Route path="Login" element={
+                   <ProtectedRoutes route="Login">
                       <MonCompte />
-                   </ProtectedRoutes>} />
-                {/*<Route path="signup" element={<Signup />} />
+                   </ProtectedRoutes>} />*/}
+                <Route path="Signup" element={<Signup />} />
                 <Route path="login" element={<Login />} />
-                <Route path="forgotPassword" element={<ForgotPassword />} />*/}
+               {/*<Route path="forgotPassword" element={<ForgotPassword />} />*/}
                 <Route path="*" element={<NotFound />} />
              </Route>
           </Routes>
-       {/*</AuthContextProvider>*/}
+       </AuthContextProvider>
     </BrowserRouter>
   );
               }
