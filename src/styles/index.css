@@ -1,13 +1,120 @@
-body {
+/* Mise à zéro des marges par défauts et box-sizing*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Définition des couleurs de base */
+
+:root {
+  --myBlack: #000000;
+  --myWhite: #FFFFFF;
+  --myGrey: #7C7675;
+  --myRed: #B11313;
+  --myYellow: #F1C530;
+  --myBlue: #07338C;
+}
+
+/*POLICES*/
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(../polices/Rajdhani/Rajdhani-Regular.ttf), url(../polices/Rajdhani/Rajdhani-Medium.ttf), url(../polices/Rajdhani/Rajdhani-Bold.ttf), url(../polices/Rajdhani/Rajdhani-Light.ttf), url(../polices/Rajdhani/Rajdhani-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Cantarell';
+  src: url(../polices/Cantarell/Cantarell-Regular.ttf), url(../polices/Cantarell/Cantarell-Bold.ttf), url(../polices/Cantarell/Cantarell-BoldItalic.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Adventure';
+  src: url(../polices/adventure/Adventure.otf), format('otf');
+}
+
+html,
+body {
+  color: var(--myWhite);
+  font-family: 'Cantarell';
+  font-size: 16px;
+}
+
+p {
+  margin: 30px 0;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  font-family: 'Rajdhani';
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+section {
+  margin: 50px 0% 50px 10%
+}
+
+@media (max-width: 600px) {
+  section {
+    margin: 50px 0% 50px 0%
+  }
+}
+
+/* Effet fadeIn sur tous les éléments */
+.fadeIn {
+
+  transform: translateX(-100px);
+  transition: transform 500ms, opacity 600ms;
+  opacity: 0;
+}
+
+.visible  {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*Bouton*/
+.btnContain {
+  display: flex;
+  justify-content: center;
+}
+
+button,
+.btnContain__btn {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: linear-gradient(80deg, #07338Caa, #B11313aa);
+  border: none;
+}
+
+button:hover,
+.btnContain__btn:hover,
+button:focus,
+.btnContain__btn:focus {
+  background: linear-gradient(80deg, #07338C, #B11313);
+  cursor: pointer;
+}
+
+button,
+.btnContain__btn a,
+.btnContain__btn {
+  font-family: 'Adventure';
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
 }

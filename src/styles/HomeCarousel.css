@@ -1,0 +1,107 @@
+/*SECTION 5 : multimédia*/
+.sec5__carrousContain {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.carousel-root .control-arrow.control-next::before,
+.carousel-root .control-arrow.control-prev::before
+ {
+    border:0;
+}
+
+.carousel-root .carousel.carousel-slider .control-arrow{
+    background: none;
+    border: none;
+    border: none;
+    width: 50px;
+    top:0;
+    padding: 0
+}
+
+.control-arrow img {
+    max-width: 50px;
+    padding: 0;
+}
+
+.carousel-root .carousel.carousel-slider  .control-arrow:hover {
+    filter: brightness(200%);
+    background: none;
+}
+
+.carousel.carousel-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec5__carrousContain__main {
+    width: 60%;
+    min-width: 200px;
+    max-width: 700px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carousel .slide img{
+    height: 100%;
+    width: 100%;
+    min-width: 100px
+}
+
+.sec5__carrousContain__main__imgContainer {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    overflow: hidden;
+}
+
+.sec5__carrousContain__main__mediaDescription {
+    width: 65%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #EDDEBF60, #19587D60);
+    padding: 5px;
+}
+
+.sec5__carrousContain__main__mediaDescription a {
+    color: white;
+    text-decoration: none;
+}
+
+.sec5__carrousContain__main__mediaDescription__component {
+    font-size: 14px;
+    margin: 5px;
+}
+
+@media (max-width: 800px) {
+    .sec5__carrousContain__main__mediaDescription__component {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .sec5__carrousContain__main {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .sec5__carrousContain__main__imgContainer,
+    .sec5__carrousContain__main__mediaDescription {
+        width: 100%;
+        height: fit-content
+    }
+    
+}
+
+.sec5__carrousContain__main__mediaDescription span {
+    color: #FFFF00;
+}
+
+.sec5__videoDiv__video {
+    width: 100%;
+}

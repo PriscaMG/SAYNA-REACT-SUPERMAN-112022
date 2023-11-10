@@ -1,0 +1,115 @@
+/*Images d'illustrations Alliés et ennemies*/
+.illPic {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;  
+  }
+
+  .illPic figure {
+    width: 30%;
+    overflow: hidden
+  }
+  
+  .illPic img {
+    max-height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  @media (max-width: 800px) {
+    .illPic {
+      flex-direction: column;  
+    }
+
+    .illPic figure {
+        width: 100%;
+      }
+  }
+
+/*SECTION 1*/
+.sect1 {
+    margin: 200px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect1 h1 {
+    font-family: 'Adventure';
+    font-size: 130px ;
+    font-weight: bold ;
+}
+.sect1 h2 {
+    font-family: 'Adventure';
+    font-size: 50px ;
+    font-weight: bold ;
+}
+.sect1__contentDiv {
+    margin-left: 25px;
+}
+
+
+@media (max-width: 1000px) {
+    .sect1 h1 {
+        font-size: 96px ;
+    }
+    .sect1 h2 {
+        font-size: 36px ;
+    }
+    .sect1 {
+        flex-direction: column;
+    }
+
+    .sect1__logoDc img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sect1 h1 {
+        font-size: 50px ;
+    }
+    .sect1 h2 {
+        font-size: 24px ;
+    }
+
+    .sect1__logoDc img{
+        width: 100px;
+    }
+}
+
+/* SECTION 8: Citations */
+.sec8 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        url(../assets/icones/icon_guillemets_1.png)no-repeat top left,
+        url(../assets/icones/icon_guillemets_2.png) no-repeat bottom right;
+}
+
+.sec8__figure {
+    min-width: 60%;
+    margin: 75px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sec8__figure blockquote p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.sec8__figure figcaption {
+    margin: 10px 0;
+}
+
+.sec8__figure figcaption,
+.sec8__figure figcaption cite {
+    font-style: normal;
+    color: var(--myGreyfull);
+    line-height: 1.9;
+}
