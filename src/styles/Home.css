@@ -83,6 +83,7 @@
 .sec8 {
     width: 90%;
     margin: 0 auto;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +91,7 @@
         url(../assets/icones/icon_guillemets_1.png)no-repeat top left,
         url(../assets/icones/icon_guillemets_2.png) no-repeat bottom right;
 }
-
+s
 .sec8__figure {
     min-width: 60%;
     margin: 75px 0;
@@ -105,7 +106,7 @@
 
 .sec8__figure figcaption {
     margin: 10px 0;
-}
+}    
 
 .sec8__figure figcaption,
 .sec8__figure figcaption cite {

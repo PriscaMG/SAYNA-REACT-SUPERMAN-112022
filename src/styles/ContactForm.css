@@ -1,5 +1,6 @@
 /* SECTION 7: Formulaire */
 .sec7 {
+    margin-top: 8%;
     background: radial-gradient(at 100% 200%, #B11313, #212E3E);
     padding: 20px 15%;
     min-width: 350px;
