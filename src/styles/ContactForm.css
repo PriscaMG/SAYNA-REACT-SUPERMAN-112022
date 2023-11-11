@@ -1,6 +1,6 @@
 /* SECTION 7: Formulaire */
 .sec7 {
-    background-color : linear-gradient(135deg, #EDDEBF60, #19587D60);
+    background: radial-gradient(at 100% 200%, #B11313, #212E3E);
     padding: 20px 15%;
     min-width: 350px;
 }
@@ -40,7 +40,7 @@
 }
 
 .sec7__form__div__selectContainer select option {
-    background-color:grey;
+    background-color:rgba(128, 128, 128, 0.623);
 }
 
 .sec7__form__div__checkbox {
@@ -124,5 +124,5 @@ opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  linear-gradient(80deg, #07338C, #B11313);
+    background:  linear-gradient(80deg, #212E3E, #B11313);
 }

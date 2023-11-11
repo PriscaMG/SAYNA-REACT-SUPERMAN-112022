@@ -1,0 +1,62 @@
+.container-largeur {
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.border-product {
+    border: 3px solid #7C7675;
+    padding: 20px 40px;
+    margin-bottom: 15px
+}
+
+.add-to-cart {
+    min-width: 100px;
+}
+
+.recap h3{
+    font-family: 'Adventure';
+}
+
+.cartInactiveLabel {
+    text-decoration: underline;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    font-size: 1.3em;
+}
+
+.cartitemImg {
+    width: 25%;
+    border: solid 3px #7C7675;
+}
+
+.sous-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sous-total h3 {
+    font-family: Cantarell;
+    color: #bebebe;
+    margin-bottom: 20px;
+}
+
+.cartContainer {
+    min-height: fit-content;
+    position: sticky;
+    margin: 0px;
+    top : 50px;
+    right: 0px;
+    z-index: 10000;
+}
+
+.cartContainer2{
+    position: relative;
+    right: -3%
+}

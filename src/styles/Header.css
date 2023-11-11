@@ -22,14 +22,14 @@
     color: white;
     text-decoration-line: none;
     font-family: 'Rajdhani';
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 400;
     text-transform: uppercase;
   }
  
   @media (max-width: 500px) {
    .header ul li a {
-     font-size: 25px;
+     font-size: 20px;
    }
    .header ul li {
      margin: 0;

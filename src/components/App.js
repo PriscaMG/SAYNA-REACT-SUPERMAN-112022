@@ -5,15 +5,15 @@ import Layout from "./Layout";
 import Home from "../pages/Home.js";
 import Eshop from "../pages/Eshop.js";
 /*import ProductDetail from '../pages/ProductDetail';*/
-/*import MonCompte from "../pages/MonCompte.js";*/
+import MonCompte from "../pages/MonCompte.js";
 import NotFound from "../pages/NotFound";
 import Signup from "../pages/SignUp.js";
 import Login from "../pages/Login.js";
-/*import Cart from "../pages/Cart";*/
+import Cart from "../pages/Cart";
 import { AuthContextProvider } from "../context/AuthContext";
-/*import ProtectedRoutes from "./ProtectedRoutes";
-/*import { ForgotPassword } from "../pages/ForgotPassword";
-import OrderRecap from "../pages/OrderRecap";
+import ProtectedRoutes from "./ProtectedRoutes";
+import { ForgotPassword } from "../pages/ForgotPassword";
+/*import OrderRecap from "../pages/OrderRecap";
 import DeliveryPayment from "../pages/DeliveryPayment";
 import OrderConfirmed from "../pages/OrderConfirmed";*/
 
@@ -25,18 +25,18 @@ function App() {
              <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="eshop" element={<Eshop />} />
-                {/*<Route path="eshop/cart" element={<Cart />} />
-                <Route path="eshop/cart/orderRecap" element={<OrderRecap />} />
+                <Route path="eshop/cart" element={<Cart />} />
+                {/*<Route path="eshop/cart/orderRecap" element={<OrderRecap />} />
                 <Route path="eshop/cart/orderRecap/deliveryPayment" element={<DeliveryPayment />} />
                 <Route path="eshop/cart/orderRecap/deliveryPayment/orderConfirmed" element={<OrderConfirmed />} />
                 <Route path="eshop/productDetail" element={<ProductDetail />} />*/}
-                {/*<Route path="Login" element={
+                <Route path="Login" element={
                    <ProtectedRoutes route="Login">
                       <MonCompte />
-                   </ProtectedRoutes>} />*/}
+                   </ProtectedRoutes>} />
                 <Route path="Signup" element={<Signup />} />
                 <Route path="login" element={<Login />} />
-               {/*<Route path="forgotPassword" element={<ForgotPassword />} />*/}
+                <Route path="forgotPassword" element={<ForgotPassword />} />
                 <Route path="*" element={<NotFound />} />
              </Route>
           </Routes>

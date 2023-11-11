@@ -27,7 +27,7 @@ const AuthContextProvider = ({children}) => {
         return signOut(auth)
     }
 
-    //Connexion
+    // La connexion
     const login = (email, password ) => {
         return signInWithEmailAndPassword(auth, email,password)
     }
@@ -37,7 +37,7 @@ const AuthContextProvider = ({children}) => {
         return sendPasswordResetEmail(auth, email)
     }
 
-    //Valeur des fonctions  à exporter
+    //Les valeurs des fonctions  à exporter
     const value = { 
         createUser,
         user,
