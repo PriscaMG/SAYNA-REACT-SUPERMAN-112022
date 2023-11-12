@@ -27,7 +27,7 @@ function App() {
                       <MonCompte />
                    </ProtectedRoutes>} />
                 <Route path="Signup" element={<Signup />} />
-                <Route path="login" element={<Login />} />
+                <Route path="Login" element={<Login />} />
                 <Route path="forgotPassword" element={<ForgotPassword />} />
                 <Route path="*" element={<NotFound />} />
              </Route>

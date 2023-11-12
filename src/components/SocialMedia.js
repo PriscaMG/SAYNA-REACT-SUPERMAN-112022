@@ -4,7 +4,7 @@ import facebookImg from '../assets/icones/facebook.png';
 import instagramImg from '../assets/icones/instagram.png';
 import twitterImg from '../assets/icones/twitter.png';
 
-function SideSocial() {
+function SocialMedia() {
     
     return (
         <aside>
@@ -23,4 +23,4 @@ function SideSocial() {
     )
 }
 
-export default SideSocial ;
+export default SocialMedia ;
