@@ -1,16 +1,16 @@
 /*Images d'illustrations Alliés et ennemies*/
-.illPic {
+.picture {
     display: flex;
     justify-content: space-between;
     margin: 50px 0;  
   }
 
-  .illPic figure {
+  .picture figure {
     width: 30%;
     overflow: hidden
   }
   
-  .illPic img {
+  .picture img {
     max-height: 400px;
     position: relative;
     left: 50%;
@@ -18,11 +18,11 @@
   }
 
   @media (max-width: 800px) {
-    .illPic {
+    .picture {
       flex-direction: column;  
     }
 
-    .illPic figure {
+    .picture figure {
         width: 100%;
       }
   }

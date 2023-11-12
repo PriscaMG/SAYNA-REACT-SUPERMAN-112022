@@ -59,23 +59,23 @@
     opacity: 0.8
   }
  
-  .header__divLogo {
-    width: 125px;
+  .header__SLogo {
+    width: 100px;
     z-index: 100000;
   }
  
   @media (max-width: 800px) {
-    .header__divLogo {
-      width: 75px;
+    .header__SLogo {
+      width: 60px;
     }
   }
  
-  .header__divLogo img {
+  .header__SLogo img {
     width: 100%;
     z-index: 100000;
   }
  
-  /*Burger menu*/
+  /*Burger menu pour la responsive*/
   .burger-menu {
     position: relative;
     width: fit-content

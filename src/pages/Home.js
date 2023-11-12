@@ -51,7 +51,7 @@ function Home() {
                               Perry White, le rédacteur en chef du Daily Planet. Pour sauver les personnes qui lui sont chers ainsi que les habitants de la Terre, Clark revêt son
                               costume et devient Superman, l’homme d’acier aux yeux du monde.
                           </p>
-                          <div className="illPic">
+                          <div className="picture">
                               <figure>
                                   <div >
                                       <img src={superman2} alt="Superman1" />
@@ -86,7 +86,7 @@ function Home() {
                           Fantôme pour s'être insurgé contre les autorités. Il est libéré et vient sur Terre pour la conquérir mais est arrêté par Superman.
                           Étant kryptonien, Zod possède les mêmes pouvoirs que Superman, et constitue donc l'un de ses plus dangereux adversaires.
                       </p>
-                      <div className="illPic">
+                      <div className="picture">
                           <figure>
                               <div >
                                   <img src={nemesis1} alt="nemesis1" />
@@ -119,7 +119,7 @@ function Home() {
                               Martha Kent qui l’élèvent comme leur propre fils. Lorsque John sera mort, Clark pourra compter sur le soutien indéféctible de sa
                               mère. Une fois engagé au Daily Planet, il rencontrera Loïs Lane qui deviendra sa partenaire et son seul “véritable amour”
                           </p>
-                          <div className="illPic">
+                          <div className="picture">
                               <figure>
                                   <div >
                                       <img src={allié1} alt="Allié 1" />

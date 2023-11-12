@@ -1,7 +1,7 @@
 /*import React, { useLayoutEffect } from 'react'*/
 import '../styles/Layout.css'
 import { Outlet, useLocation } from 'react-router-dom';
-/*import SideSocial from "./SideSocial.js";*/
+import SocialMedia from "./SocialMedia.js";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
 import home from "../assets/images/img1.png"
@@ -51,7 +51,7 @@ function Layout() {
           <img src={bgImg} alt="background-pic" className='backgroundImg' />
         </div>
         <div id="appBody">
-          {/*<SideSocial />*/}
+          <SocialMedia />
           <Header />
           <Outlet />
           <Footer />

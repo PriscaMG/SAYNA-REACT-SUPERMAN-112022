@@ -40,7 +40,7 @@ function Header() {
     return (
         <header className="header">
             <div className="header">
-                <div className="header__divLogo">
+                <div className="header__SLogo">
                     <NavLink to="/"><img src={logoSupermanBlanc} alt="Logo Superman" className="header__logo"
                         title="HOME" />
                     </NavLink>
@@ -55,12 +55,12 @@ function Header() {
                     <ul className={`menu-list ${isLargeScreen ? 'inlineMenuList' : 'burgerMenuList'} ${dropdownIsVisible ? 'isDropDown' : 'hideDropDown'}`}>
                         <li><NavLink to="/">Home</NavLink> </li>
                         <li><NavLink to="eshop">E-Shop</NavLink> </li>
-                        {user ? <li><NavLink to="compte">Mon compte</NavLink></li> : 
+                        {user ? <li><NavLink to="compte">Mon compte</NavLink></li> : (
                             <div>
                                 <NavLink to="login"><button className='ms-2 btnContain__btn navBarBtn'>Connection</button></NavLink>
                                 <NavLink to="signup"><button className='ms-2 btnContain__btn navBarBtn'>Inscription</button></NavLink>
                             </div>
-                        
+                        )
                         }
                     </ul>
                 </nav>

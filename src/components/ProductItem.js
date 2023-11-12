@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/ProductItem.css'
 import { UserAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router'
-import { db } from '../firebase-config'
+import { db } from '../config-firebase'
 import { updateDoc,doc } from 'firebase/firestore'
 
 function ProductItem({ product, addToCart }) {

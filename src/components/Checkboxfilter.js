@@ -13,7 +13,7 @@ function Checkboxfilter({ dataFilterArray, children, onCheckChange }) {
             return categorie
         })
         setCheck([...updateFilter])
-        //Envoi de l'état vers le composant parent (Eshop)
+        //Transmettre l'état au composant parent (Eshop)
         onCheckChange([...updateFilter])
 
     }
