@@ -36,12 +36,12 @@
 }
 
 .sect1 h1 {
-    font-family: 'Adventure';
+    font-family: 'Advent Pro';
     font-size: 130px ;
     font-weight: bold ;
 }
 .sect1 h2 {
-    font-family: 'Adventure';
+    font-family: 'Advent Pro';
     font-size: 40px ;
     font-weight: bold ;
 }
@@ -91,7 +91,7 @@
         url(../assets/icones/icon_guillemets_1.png)no-repeat top left,
         url(../assets/icones/icon_guillemets_2.png) no-repeat bottom right;
 }
-s
+
 .sec8__figure {
     min-width: 60%;
     margin: 75px 0;

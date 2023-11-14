@@ -1,7 +1,6 @@
  /*header et navigation*/
  .header {
     height: 150px;
-    /* 132px dans l'énoncé mais 150px ressemble plus à la maquette */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,9 +51,11 @@
   }
  
   .navBarBtn {
+    font-family: 'Advent Pro';
     width: 120px;
     height: 30px;
     padding: 0;
+    margin-top: 20px;
     margin-bottom: 20px;
     opacity: 0.8
   }

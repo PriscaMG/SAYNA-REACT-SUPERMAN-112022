@@ -1,4 +1,3 @@
-/*import React, { useLayoutEffect } from 'react'*/
 import '../styles/Layout.css'
 import { Outlet, useLocation } from 'react-router-dom';
 import SocialMedia from "./SocialMedia.js";

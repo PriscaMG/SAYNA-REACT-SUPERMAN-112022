@@ -3,8 +3,9 @@
 }
 
 #hero h1 {
-    font-family: 'Adventure';
+    font-family: 'Advent Pro';
     font-size: 75px;
+    margin-left: 30px;
 }
 
 @media (max-width: 600px) {

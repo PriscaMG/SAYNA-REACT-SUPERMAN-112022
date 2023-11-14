@@ -1,5 +1,5 @@
 .inscription h2 {
-    font-family: 'Adventure';
+    font-family: 'Cantarell';
 }
 
 .inscription .formulaire {
@@ -23,7 +23,7 @@ form {
 }
 
 form label {
-    font-family: 'Adventure';
+    font-family: 'Cantarell';
     color: white
 }
 
