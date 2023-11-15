@@ -50,6 +50,10 @@ form label {
     font-weight: bold;
 }
 
+.text-center h2 {
+    font-family: "Advent Pro";
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;

@@ -67,7 +67,7 @@ function Login() {
                                                 </Link>
                                             </div>
                                             <div className='btnContain mb-3'>
-                                                <button type="submit" className="btnContain__form">valider</button>
+                                                <button type="submit" className="btnContain__form">VALIDER</button>
                                             </div>
                                             <div className='social mb-3'>
                                                 <div className='connectWith__container mb-3'>

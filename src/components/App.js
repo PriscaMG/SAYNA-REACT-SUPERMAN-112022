@@ -10,7 +10,7 @@ import Signup from "../pages/SignUp.js";
 import Login from "../pages/Login.js";
 import Cart from "../pages/Cart";
 import { AuthContextProvider } from "../context/AuthContext";
-import ProtectedRoutes from "./ProtectedRoutes";
+/*import ProtectedRoutes from "./ProtectedRoutes";*/
 import { ForgotPassword } from "../pages/ForgotPassword";
 
 function App() {
@@ -22,10 +22,10 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="eshop" element={<Eshop />} />
                 <Route path="eshop/cart" element={<Cart />} />
-                <Route path="Login" element={
-                   <ProtectedRoutes route="Login">
+                {/*<Route path="Login" element={
+                   <ProtectedRoutes route="compte">
                       <MonCompte />
-                   </ProtectedRoutes>} />
+                   </ProtectedRoutes>} />*/}
                 <Route path="Signup" element={<Signup />} />
                 <Route path="Login" element={<Login />} />
                 <Route path="forgotPassword" element={<ForgotPassword />} />
