@@ -6,7 +6,7 @@ import { db } from '../config-firebase';
 const batmanProducts = [
     {
         id: "1",
-        imgUrl: "https://firebasestorage.googleapis.com/v0/b/superman-react-app-api-a16ea.appspot.com/o/Mug.jpg?alt=media&token=0fd83386-49f0-4362-b1f4-0f33dc53d101",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/sayna-superman-react-api.appspot.com/o/Mug.jpg?alt=media&token=f7439854-a909-439d-b285-bb78a73c4873",
         categorie: "goodies",
         univers: "superman",
         nom: "Mug",

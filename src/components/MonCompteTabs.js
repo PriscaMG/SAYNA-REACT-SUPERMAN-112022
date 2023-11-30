@@ -37,7 +37,7 @@ export function Tabs({ children }) {
         const liLink = e.target.parentNode
         const liArray = Array.from(liLink.parentNode.children)
         liArray.map((el) => {
-            el.classList.remove("active")
+            return el.classList.remove("active")
         })
         liLink.classList.add("active")
     }
